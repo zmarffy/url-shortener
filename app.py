@@ -47,7 +47,6 @@ def create_new():
         try:
             try:
                 id_ = request.form["id"]
-                print(id_)
                 id_provided = True
             except KeyError:
                 id_ = ''.join(
@@ -65,4 +64,4 @@ def create_new():
 
 if __name__ == "__main__":
     db.create_all()
-    app.run(debug=True)
+    app.run()
